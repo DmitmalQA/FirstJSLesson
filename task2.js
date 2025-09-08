@@ -8,14 +8,7 @@ while (age > max || age < min){
 
 console.log("The person's age is "+age)
 
-let isAdult
-
-if (age >= 18){
-    isAdult = true
-}
-else{
-    isAdult = false
-}
+let isAdult = age >= 18
 
 if(isAdult){
     console.log("This person is an adult. isAdult is "+isAdult)
