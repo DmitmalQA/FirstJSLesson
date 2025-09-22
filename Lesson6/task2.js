@@ -1,11 +1,11 @@
 function countDown(num){
-    do{
+    if(num === 0){
+        console.log("The number is "+num+". Exiting...")
+    }else{
         console.log("The number is "+num+".")
-        num = num - 1
-        if(num === 0){
-            console.log("The number is already "+num+". Exiting...")
-        }
-    }while(num > 0)
+        countDown(num - 1)
+    }
+    
 }
 
 countDown(5)
