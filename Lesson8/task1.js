@@ -40,6 +40,13 @@ let calculator = {
         }
     },
 
+    reset(){
+        this.lastResult = null
+        this.operationsCount = 0
+        console.log("The calculator has been reset.")
+        calculator.showStats()
+    },
+
     showStats(){
         console.log("The last result is: "+this.lastResult)
         console.log("Total operations count is: "+this.operationsCount)
@@ -51,3 +58,4 @@ calculator.subtract(Math.round(Math.random()*10), Math.round(Math.random()*10))
 calculator.multiply(Math.round(Math.random()*10), Math.round(Math.random()*10))
 calculator.divide(Math.round(Math.random()*10), Math.round(Math.random()*10))
 //calculator.divide(Math.round(Math.random()*10), 0)
+calculator.reset()
