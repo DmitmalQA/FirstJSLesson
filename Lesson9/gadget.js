@@ -42,6 +42,7 @@ export class Gadget {
         console.log(red + `${this.model}` + reset + " of " + green + `${this.brand}` + reset + " released in " + blue + `${this.year}.` + reset)
     }
 
+    //static function to determine the earliest object from the array of objects and return the new object back
     static getOldestGadget(gadgetArray){
         let earliestYear = 2025
         let earliestModel = ''

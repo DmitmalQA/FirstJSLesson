@@ -44,6 +44,7 @@ console.log("-------------------------------------------------------------------
 console.log("This is task 3.")
 console.log("----------------------------------------------------------------------------------------------------")
 
+//creating multiple objects to work with
 let phoneTask31 = new Smartphone("Apple", "iPhone 3", 2021, "iOS 1")
 let phoneTask32 = new Smartphone("Samsung", "Galaxy 21", 2012, "iOS 5")
 let phoneTask33 = new Smartphone("Nokia", "Model 13", 2025, "iOS 13")
@@ -51,7 +52,13 @@ let deviceTask31 = new Gadget("Samsung", "Watch 3", 2003)
 let deviceTask32 = new Gadget("Digital", "Tablet 23", 2013)
 let deviceTask33 = new Gadget("Apple", "iPad 1204", 2018)
 
+//uniting all of the devices into an array
 let listOfDevices = [phoneTask31, phoneTask32, phoneTask33, deviceTask31, deviceTask32, deviceTask33]
-console.log("The oldest device is below,")
+//showing the information about every device in the array.
+listOfDevices.forEach(element => {
+    element.getInfo()
+});
+console.log("The oldest device is below.")
+//returning the oldest device from the initial array.
 let oldestGadget = Gadget.getOldestGadget(listOfDevices)
 oldestGadget.getInfo()
