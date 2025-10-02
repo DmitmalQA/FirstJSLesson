@@ -54,11 +54,12 @@ let deviceTask33 = new Gadget("Apple", "iPad 1204", 2018)
 
 //uniting all of the devices into an array
 let listOfDevices = [phoneTask31, phoneTask32, phoneTask33, deviceTask31, deviceTask32, deviceTask33]
+console.log("The list of devices\n")
 //showing the information about every device in the array.
 listOfDevices.forEach(element => {
     element.getInfo()
 });
-console.log("The oldest device is below.")
+console.log("\nThe oldest device is\n")
 //returning the oldest device from the initial array.
 let oldestGadget = Gadget.getOldestGadget(listOfDevices)
 oldestGadget.getInfo()
