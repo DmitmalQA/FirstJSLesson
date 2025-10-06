@@ -14,7 +14,7 @@ async function getPostandComments(postId){
         console.log(responsePost)
     }, 1000)
     setTimeout(() => {
-        console.log(blue + "\nThis is comments to the post above.\n" + reset)
+        console.log(yellow + "\nThis is comments to the post above.\n" + reset)
     }, 2000)
     setTimeout(() => {
         console.log(responseComments)

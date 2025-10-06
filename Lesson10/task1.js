@@ -17,4 +17,4 @@ function delayedLog(message, delay){ //creating a function that would accept a m
 }
 
 delayedLog(red + "Hello world! but in red." + reset, 2000)
-console.log(blue + "Undelayed response. It will be blue." + reset)
+console.log(green + "Undelayed response. It will be green." + reset)
